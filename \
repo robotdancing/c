@@ -1,0 +1,17 @@
+#ifndef SHELLSORT_C
+#define SHELLSORT_C
+#include "ShellSort.h"
+
+void ShellSort(int a[],int length)
+{
+	int i,j,gap,tmp;
+	for(gap=length/2;gap>0;gap/=2);
+		for(i=gap;i<length;i++)
+			for(j=i-gap;a[j]>a[j+gap]&&j>0;j-=gap)
+			{
+				tmp=a[j+gap];
+				a[j+gap]=a[j];
+				a[j]=tmp;		
+			]
+}
+#endif
